@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deuex Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./deuex-logo.svg" alt="Logo" />
+      <div class="header-items">
+        <img
+          src="./notification-icon.svg"
+          class="picDetails"
+          alt="Notifications"
+        />
+        <img src="./setting-icon.svg" class="picDetails" alt="Settings" />
+        <div class="profile-body">
+          <img src="./model-image.jpeg" alt="Profile" class="user-profile" />
+          <div class="dropdown">
+            <span>Sara John</span>
+            <img
+              src="./down-arrow.svg"
+              alt="Expand profile menu"
+              height="16"
+              width="11"
+              class="dropdown-button"
+            />
+            <div class="dropdown-content">
+              <a href="#">Edit Profile</a>
+              <a href="#">Change Password</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <script src="./script.js"></script>
-
-</body>
+  </body>
 </html>
