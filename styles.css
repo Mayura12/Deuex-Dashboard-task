@@ -124,6 +124,7 @@
   border-radius: 6px;
   padding: 16px 12px;
   border: none;
+  cursor: pointer;
 }
 .table-section {
   border-radius: 16px;
