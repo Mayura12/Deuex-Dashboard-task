@@ -72,6 +72,151 @@
         <img src="./orders-icon.svg" alt="Orders icon" />
       </div>
     </section>
+    <section class="table-section">
+        <div class="table-header">
+          <span>Production Details</span>
+          <div class="right-side-header">
+            <div class="tab-body">
+              <img
+                src="./table-icon.svg"
+                alt="Table view"
+                id="table-view"
+                class="active-tab"
+              />
+              <img
+                id="card-view"
+                src="./card-view.svg"
+                alt="Dashboard view"
+              />
+            </div>
+            <button class="add-button">Add Record +</button>
+          </div>
+        </div>
+        <div class="product-card-body" id="product-card-body"></div>
+          <table id="product-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Product Date</th>
+              <th>Exchange</th>
+              <th>Color Options</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+  
+        <!-- New Record Form -->
+        <div class="form-container hidden" id="form-container">
+          <div class="add-new-record">Add New Record</div>
+          <form class="add-record-form">
+            <div class="form-group">
+              <label for="product-id">ID</label>
+              <input type="text" name="id" id="product-id" />
+            </div>
+            <div class="form-group">
+              <label for="product-name">Product Name</label>
+              <select id="product-name" name="product-name">
+                <option>Fitness Tracker</option>
+                <option>Bluetooth Speaker</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="product-description">Product Description</label>
+              <textarea
+                id="product-description"
+                name="product-description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="form-group">
+              <label>Status</label>
+              <div class="radio-group">
+                <label
+                  ><input type="radio" name="status" value="available" />
+                  Available</label
+                >
+                <label
+                  ><input type="radio" name="status" value="not-available" /> Not
+                  Available</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Color Options</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="color" value="red" /> Red</label
+                >
+                <label
+                  ><input type="checkbox" name="color" value="yellow" />
+                  Yellow</label
+                >
+                <label
+                  ><input type="checkbox" name="color" value="blue" /> Blue</label
+                >
+                <label
+                  ><input type="checkbox" name="color" value="white" />
+                  White</label
+                >
+                <label
+                  ><input type="checkbox" name="color" value="black" />
+                  Black</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" />
+            </div>
+            <div class="form-group">
+              <label for="price">Price (INR)</label>
+              <input type="number" id="price" name="price" />
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount (INR)</label>
+              <input type="number" id="amount" name="amount" readonly />
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="cancel-btn" id="cancel-btn">
+                Cancel
+              </button>
+              <button type="submit" class="add-btn">Add</button>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Delete Modal -->
+        <div id="deleteModal" class="modal">
+          <div class="modal-content">
+            <h2>Delete Product</h2>
+            <p class="modal-content-data">
+              Are you sure you want to remove
+              <span class="product-name">Bluetooth Speakers</span> from the
+              inventory?
+            </p>
+            <div class="modal-buttons">
+              <button class="cancel-btn" id="modal-cancel-btn">Cancel</button>
+              <button class="delete-btns">Delete</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="pagination-btn">&lt; Previous</button>
+          <span>1 of 3</span>
+          <button class="pagination-btn">Next &gt;</button>
+        </div>
+      </section>
     <script src="./script.js"></script>
   </body>
 </html>
