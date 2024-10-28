@@ -61,3 +61,29 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* card style */
+.card {
+  padding: 28px 24px;
+  display: flex;
+  border-radius: 16px;
+  background: #f4f6fd;
+  gap: 43px;
+}
+.cards-body {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 34px 72px;
+}
+.cards-details {
+  font-size: 36px;
+  font-weight: 300;
+  color: #050d26;
+  line-height: 24px;
+}
+.totals-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b1e6d;
+  line-height: 32px;
+}
